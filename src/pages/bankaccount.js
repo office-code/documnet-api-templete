@@ -51,8 +51,6 @@ export default function Bankaccount() {
                   <p className="p-pera">Related guide: Bank debits and transfers</p>
                 </div>
 
-
-                <h1>hello</h1>
               </Col>
 
               <Col lg={6}>
