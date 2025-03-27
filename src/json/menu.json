@@ -1,0 +1,16 @@
+
+{ 
+    "menuData" : [
+    { "id": "home", "label": "Introduction", "path": "home" },
+    { "id": "integration", "label": "Integration", "path": "integration" },
+    { "id": "authentication", "label": "Authentication", "path": "authentication" },
+    { "id": "getting-started", "label": "Getting Started", "path": "getting-started" },
+    { "id": "errors", "label": "Errors", "path": "errors" },
+    { "id": "bank-account", "label": "Bank Account", "path": "bank-account" },
+    { "id": "methods-api", "label": "Methods API", "path": "methods-api" },
+    { "id": "callback", "label": "Callback", "path": "callback" },
+    { "id": "brand-guidelines", "label": "Brand Guidelines", "path": "brand-guidelines" },
+    { "id": "keys", "label": "API Keys", "path": "keys" },
+    { "id": "faq", "label": "FAQ", "path": "faq" }
+  ]
+}

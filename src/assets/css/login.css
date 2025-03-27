@@ -1,0 +1,488 @@
+/* .account-area {
+  padding: 30px 20px 30px 0px;
+  position: relative;
+}
+.sign-up-type-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+}
+lable.radio-title-type {
+  color: #000;
+  font-size: 16px;
+  margin-left: 8px;
+  font-weight: 500;
+} */
+/* button.google-login-cmd {
+  width: 100%;
+  border: 1px solid #a9a8b3;
+  height: 43px;
+  background: transparent;
+  font-size: 13px;
+  border-radius: 5px;
+}
+
+section.account-section.bg_img.sign-in-w {
+  padding: 40px 0px 10px 0px;
+  background: #fff;
+}
+.login-header h6 {
+  color: #002f66;
+  font-weight: 600;
+  margin-bottom: 0px;
+} */
+/* .search-radio-btn-type.search-radio-tow-type {
+  margin: 15px 13px;
+}
+.sign-up-or {
+  float: right;
+}
+
+.sing-log img {
+  width: 200px;
+}
+.login-header h2 {
+  padding: 8px 0px 8px 0px;
+  color: #1e0a3c;
+  position: relative;
+  text-align: left;
+  font-size: 25px;
+  font-weight: 600;
+} */
+/* img.logo-sin {
+  width: 30%;
+  position: relative;
+  left: 20px;
+}
+img.sing-immm {
+  width: 100%;
+  position: relative;
+  top: -32px;
+}
+.do-same {
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  margin: 0px auto;
+  display: block;
+  width: 90%;
+} */
+/* section.account-section.bg_img.sign-up {
+  padding: 35px 0px 0px 0px;
+} */
+
+/* .account-area .account-form .form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+.account-area .account-form .form-group label span {
+  color: #f1481f;
+} */
+
+/* .account-area .option {
+  text-align: center;
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+
+}
+
+.account-area .option a {
+  color: #ff7900;
+  font-size: 15px;
+  margin-left: 10px;
+  font-weight: 600;
+} */
+/* .forgot a {
+  color: #1e0a3c;
+  float: right;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.login-but-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0px;
+} */
+
+
+
+/* Animation for the checkbox */
+/* @keyframes checkAnimation {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+ */
+
+/* 
+.back-to-home {
+  color: #ff7900;
+}
+
+.back-to-home a {
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 5px;
+  color: #ff7900;
+} */
+
+/* .sing-log {
+  background: #0000002e;
+  padding: 70px;
+}
+.sing-log h2 {
+  font-size: 55px;
+  padding: 20px 0px 20px 0px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 0px;
+} */
+
+/* .sing-log h5 {
+  color: #000;
+  font-size: 14px;
+  padding: 15px 0px 0px 0px;
+}
+.img-signin-signup {
+  height: 100%;
+  position: relative;
+  background: #e8f2ff;
+} */
+/* .sing-log h1 {
+  color: #ff5e14;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px 0px 0px 0px;
+}
+.sing-log h4 {
+  font-size: 27px;
+  color: #000;
+  line-height: 42px;
+  font-weight: 800;
+  padding: 0px 0px 10px 0px;
+}
+.google-sign h6 {
+  margin-bottom: 0px;
+} */
+
+
+/* .google-sign span {
+  padding-left: 65px;
+  color: #000;
+  font-size: 14px;
+}
+.google-sign {
+  margin-bottom: 14px;
+} */
+
+/* Hide the default checkboxes */
+/* .sign-up-type-user input[type="checkbox"] {
+  display: none;
+} */
+
+/* Style the labels to resemble checkboxes */
+/* .sign-up-type-user .search-radio-btn-type {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+} */
+
+/* .sign-up-type-user .search-radio-btn-type input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 20px;
+  font-size: 13px;
+}
+.sign-up-type-user .search-radio-btn-type input[type="checkbox"] + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ffc107;
+  transition: all 0.3s;
+  border-radius: 50%;
+} */
+
+/* Style the checked state */
+/* .sign-up-type-user .search-radio-btn-type input[type="checkbox"]:checked + label::before {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  border-radius: 50%;
+}
+ */
+
+
+
+
+/********************** //sign in and sign up css end// ***********************/
+
+/********************** //forgetpassword css start// ***********************/
+/* 
+h5.title-forget {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6a6c6e;
+}
+
+svg.forget-pass-icon {
+  width: 124px;
+  height: 124px;
+  padding: 15px 0px;
+}
+
+@media(max-width:991px){
+
+.sing-log {
+  padding: 20px;
+  margin: 30px 19px 0px 0px;
+}
+.do-same {
+  width: 100%;
+}
+
+}
+@media(max-width:767px){
+  img.sing-immm {
+    top: 19px;
+}
+.sign-up-type-user {
+  float: left;
+}
+.account-area {
+  padding: 30px 20px 20px 20px;
+
+}
+
+.back-to-home {
+  text-align: center;
+}
+}
+@media(max-width:575px){
+  .sing-log h2 {
+    font-size: 38px;
+    padding: 0px 0px 0px 0px;
+}
+.sing-log h4 {
+  font-size: 24px;
+  line-height: 43px;
+  padding: 0px 0px 0px 0px;
+}
+.do-same.mt-5 {
+  margin-top: 0px !important;
+}
+.account-area.mt-2.mb-5 {
+  margin-bottom: 0px !important;
+}
+}
+
+@media (max-width: 480px) {
+  .account-area {
+    padding: 30px 20px;
+   
+  }
+  .user-profile-box {
+    
+    padding: 27px 20px;
+   
+}
+.login-but-box {
+  margin: 20px 0px;
+}
+section.account-section.bg_img.sign-up {
+  padding: 10px 0px 0px 0px;
+}
+button.login-butt.btn.btn-primary {
+  width: 100%;
+}
+}
+@media (max-width: 375px){
+  span.c-form__label-text {
+    font-size: 13px;
+}
+section.account-section.bg_img.sign-in-w {
+  padding: 5px 0px 4px 0px;
+  background: #fff;
+}
+.forgot a {
+  font-size: 12px;
+}
+.account-area .option {
+  font-size: 14px;
+}
+.account-area .option a {
+  font-size: 14px;
+  margin-left: 6px;
+}
+.login-header h2 {
+  padding: 4px 0px 0px 0px;
+  font-size: 20px;
+}
+img.logo-sin {
+
+  top: 7px;
+  left: 14px;
+}
+
+img.sing-immm {
+  top: 0px;
+  height: 158px;
+  object-fit: contain;
+}
+
+.account-area.mt-2.mb-5 {
+  margin-bottom: 0px !important;
+  height: 400px;
+}
+
+}
+
+@media(max-width:320px){
+  .account-area .account-form .form-group {
+    margin-bottom: 10px;
+}
+
+span.c-form__label-text {
+  font-size: 13px;
+  position: relative;
+  top: -4px;
+}
+
+}
+ */
+
+
+
+
+
+ /************* login css ************/
+ input.form-control {
+  border: 1px solid #939393;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 11px 10px;
+  border-radius: 6px;
+}
+
+.input-form-box {
+  margin-bottom: 35px;
+}
+
+.react-tel-input .selected-flag:hover, .react-tel-input .selected-flag:focus {
+  border: 1px solid #0000003b !important;
+  background-color: transparent !important;
+}
+.react-tel-input .flag-dropdown {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 3px 0 0 3px;
+}
+.errorMsg {
+  position: absolute;
+  padding: 8px 0px;
+  color: red;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 0px !important;
+}
+
+button.login-butt.btn.btn-primary {
+  width: 40%;
+  padding: 8px;
+  background: #042a50;
+  border: none;
+  border-radius: 50px;
+}
+
+.react-tel-input .selected-flag {
+  background: transparent;
+  border: 1px solid #939393 !important;
+}
+
+.react-tel-input .form-control.invalid-number {
+  border: 1px solid #939393 !important;
+  background-color: #FAF0F0;
+  border-left-color: #939393;
+}
+
+input[data-autocompleted] {
+  background-color: transparent !important;
+}
+
+.form-check-input:checked {
+  transform: scale(1);
+}
+
+.form-check-input {
+  border: 1px solid #8c8d8f;
+}
+
+.form-check-input:focus {
+  border: 1px solid #000 ;
+  outline: 0;
+  box-shadow: none;
+}
+
+.split-container__divider {
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.split-container__divider:before {
+  content: "";
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #a9a8b3;
+}
+
+.split-container__divider-text {
+  color: #6f7287;
+  border: 1px solid #a9a8b3;
+  border-radius: 100px;
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  padding: 0 12px 3px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.nsm7Bb-HzV7m-LgbsSe {
+  border: none !important;
+  width: 100% !important;
+}
+.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-Bz112c {
+  height: 18px;
+  width: 17px;
+  left: 34% !important;
+  position: absolute !important;
+}
+
+label.label {
+  display: block;
+  padding: 6px 0px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1e0a3c;
+}
+.react-tel-input .form-control {
+  padding-left: 48px !important;
+}
