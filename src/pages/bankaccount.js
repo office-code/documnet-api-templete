@@ -33,8 +33,6 @@ export default function Bankaccount() {
   }, []);
 
 
-
-
   return (
     <div className="box-dashboard-r">
       <div className="dashboard-wrapper">
@@ -45,12 +43,12 @@ export default function Bankaccount() {
             <Row>
               <Col lg={6}>
                 <div className="heading-box">
+                  <h1>hello</h1>
                   <h4 className="h4-heading">Bank Accounts</h4>
                   <p className="p-pera">These bank accounts are payment methods on Customer objects.</p>
                   <p className="p-pera">On the other hand External Accounts are transfer destinations on Account objects for connected accounts. They can be bank accounts or debit cards as well, and are documented in the links above.</p>
                   <p className="p-pera">Related guide: Bank debits and transfers</p>
                 </div>
-
               </Col>
 
               <Col lg={6}>

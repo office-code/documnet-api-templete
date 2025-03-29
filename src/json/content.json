@@ -1,0 +1,193 @@
+{
+    "introduction": [
+        {
+            "pracontent": [
+                "The Ding API is a Level 0 REST web service. We have used the swagger standard to describe this service. As a result, we are able to provide an interactive documentation page, which lists all the methods and even allows you to interact with API, showing the request bodies and responses that you will receive from the API.",
+                "To generate an API Key, you should go to the Developer tab which can be found in the Account Settings section of your DingConnect account.",
+                "Enter the API Key into the token input box on top-right of the Methods page Methods and click the button. Then browse the API definition and interact with the API from that page. Using this interface you can figure out the headers, request bodies and responses that your software will need to send to interact with the API.",
+                "The swagger definition can also be used to automatically generate client SDK libraries in many different languages. Many free and commercial code generators are available that can consume this swagger definition and generate client code for you, allowing you to rapidly develop your application. For example, you can import our swagger definition into the online service provided at http://editor.swagger.io and from that interface you can generate client code in over 20 different programming languages.",
+                "The URL for our swagger definition is in the URL text box on the Methods page and ends with /swagger/docs/v1."
+            ]
+        }
+    ],
+    "authentication": [
+        {
+            "titlename": "Authentication",
+            "pracontent": [
+                "The DingConnect API supports authorisation using API Keys and OAuth. For any new integration, our recommendation is to use OAuth.",
+                "All requests to the API must be authenticated. Any exceptions to this rule are documented in the individual API methods.",
+                "All requests can include an optional header X-Correlation-Id that can be used to correlate HTTP requests between a client and server. This header will be useful to diagnose potential issues that integrated clients might encounter."
+            ],
+            "titlename1": "API Keys",
+            "pracontent1": [
+                "The client must include an HTTP header api_key using the API key that was issued to you.",
+                "If authentication fails, you will receive a HTTP 401 response."
+            ],
+            "titlename2": "OAuth",
+            "pracontent2": [
+                "The only supported OAuth flow is the client credentials flow, which is used only for server-to-server API requests. In order to use OAuth, a new OAuth client must be registered in your DingConnect account.",
+                "OAuth credentials are managed from within the DingConnect portal, by navigating to the Developer tab in Account Settings",
+                "Once new OAuth credentials are generated, a bearer token can be requested from https://idp.ding.com/connect/token with the client_id and client_secret. The returned token must be included in the Authorization header with the “Bearer” authentication scheme. A new token must be requested once the current token expires.",
+                "Supported identity provider configuration can be obtained from: https://idp.ding.com/.well-known/openid-configuration, and used programmatically with client libraries."
+            ],
+            "titlename3": "Getting Token",
+            "pracontent3": [
+                "The only supported OAuth flow is the client credentials flow, which is used only for server-to-server API requests. In order to use OAuth, a new OAuth client must be registered in your DingConnect account."
+            ],
+            "titlename4": "Using Tokens",
+            "pracontent4": [
+                "The Authorization header must be populated with the access token using the “Bearer” authentication scheme.",
+                "When a token expires, a new token must be requested, as documented above in “Getting Tokens”",
+                "Token expired example response"
+            ]
+        }
+    ],
+    "gettingstarted": [
+        {
+            "titlename": "Getting Started",
+            "pracontent": [
+                "y'ello, in this section we'll walk you through getting up and running on our Mobile Money Open API. Here you will:"
+            ],
+            "listpra": [
+                "Signup For An Account",
+                "Manage Your Subscriptions",
+                "Generate API User and API Key",
+                "In order to receive the callback for your transactions, please consider the following:"
+            ],
+            "titlename1": "Signup For An Account",
+            "titlename2": "Manage Your Subscriptions",
+            "pracontent2": [
+                "Developers are issued a Primary Key and Secondary Key for every product.",
+                "Both primary and secondary Subscription key provides access to the API. Without one of them a developer cannot access any of the APIs. Subscriptions are stored under the user profile and have no expiry.",
+                "Here you can view the status of the package, date it started, conduct cancellation or activation actions, and also show or regenerate your Primary Key and Secondary Key"
+            ],
+            "titlename3": "Generate API User and API Key",
+            "pracontent3": [
+                "You are now almost ready to start we building with our Mobile Money Open API. The next thing we need to do is to Provision the API User and API Key using the Sandbox Provisioning API. We do this in the next section."
+            ]
+        }
+    ],
+    "error": [
+        {
+            "titlename": "Common Error Codes",
+            "pracontent": [
+                "Stripe uses conventional HTTP response codes to indicate the success or failure of an API request. In general: Codes in the 2xx range indicate success. Codes in the 4xx range indicate an error that failed given the information provided (e.g., a required parameter was omitted, a charge failed, etc.). Codes in the 5xx range indicate an error with Stripe’s servers (these are rare).",
+                "The complete definitions of error codes are found in the swagger documentation. Below is the list of error codes available."
+            ],
+            "titlename1": "Error Responses",
+            "titlename2": "Common Error Responses with Action",
+            "titlename3": "Other Error Responses",
+            "pracontent3": [
+                "You are now almost ready to start we building with our Mobile Money Open API. The next thing we need to do is to Provision the API User and API Key using the Sandbox Provisioning API. We do this in the next section."
+            ]
+        }
+    ],
+    "callback": [
+        {
+            "titlename": "Callback",
+            "titlename1": "Setting up a Callback URL",
+            "pracontent": [
+                "Transfer and RequestToPay APIs are Asynchronous in MTN MoMo API Platform",
+                "When a merchant system sends a POST of either /transfer, or /requesttopay APIs, the Gateway validates the request and then responds with “202 Accepted”",
+                "The transaction is then queued for processing.",
+                "Once processed, a callback with the final result of the transaction is sent to the merchant system",
+                "In order to receive the callback for your transactions, please consider the following:"
+            ],
+            "listcontent": [
+                "Register your callback host by specifying the domain as providerCallbackHost when creating your API Keys. On production this will be done via the Account Portal",
+                "Specify the callback URL in each of your /requesttopay or /tranfer POST",
+                "Use http and not https on sandbox",
+                "Allow PUT & POST on your callback listener host",
+                "In order to receive the callback for your transactions, please consider the following:"
+            ],
+            "titlename2": "Approved Intermediate CA's for Open API",
+            "pracontent2": [
+                "For Open API callbacks to function, the 3PP Intermediate certificate chains must be imported on the PG’s tls_keystore and callback URL’s are required to use https L7 protocol:"
+            ],
+            "pracontent3": [
+                "CN – Refers to the Common name of the immediate intermediate CA Chain",
+                "Alias – Name that is used while storing the Certificate in PG’s tls_keystore"
+            ]
+        }
+    ],
+    "brandguidelines": [
+        {
+            "titlename": "Brand Guidelines",
+            "pracontent": [
+                "The MTN MoMo logo will only be used at the payment stage of your customer journey. Below are the brand guidelines for use of the MTN Brand:"
+            ],
+            "listcontent": [
+                "When used the logo sits in the bottom right hand corner of the messaging, against a white yellow background",
+                "The distance between the logo and the border to the right and border to the bottom is always equal and equivalent size to the blue bulb that forms the MTN logo",
+                "The size of the logo will occupy the rectangle space of the ad where it features, sclaed to feature prominently relative to all the other content in the ad",
+                "The MTN yellow pantone is:"
+            ],
+            "chalidcontent": [
+                "Pantone 123 C",
+                "CMYK - C:0 M:20 Y:100 K:0",
+                "RGB - R:255 G:203 B:5",
+                "HEX - #fe7900, #012f66"
+            ],
+            "pracontent2": [
+                "Reference to or usage of the MTN MoMo logo in other instances other than at the payment stage in the customer journey, will be restricted a statement of endorsement i.e. Supported by MTN MoMo. The use of the MTN MoMo in these instances is prohibited."
+            ]
+        }
+    ],
+    "faq": [
+        {
+            "titlename": "Authentication",
+            "titlename1": "What is a subscription Key?",
+            "titlename2": "What is the API User and API Key for Oauth 2.0?",
+            "titlename3": "How do I generate an Oauth 2.0 token?",
+            "titlename4": "How do I create, provision and manage the API user and API key?",
+            "titlename5": "How do I generate a UUID for my transactions?",
+            "titlename6": "What are the common error codes you may expect?",
+
+            
+        
+            "pracontent1": [
+                "The subscription key is assigned to the Ocp-Apim-Subscription-Key parameter of the header",
+                "This Key is used to authenticate and limit the number of calls that can be made",
+                "The Subscription Key can be found in your user profile",
+                "Developers – can use either the Primary Key or Secondary Key for every product they subscribe to allow access to the API",
+                "A developer cannot access or utilize any of the respective APIs without a Subscription Key",
+                "Different subscription keys can be used for different product APIs; please check in your user profile"
+            ],
+
+            "pracontent2": [
+                "The only supported OAuth flow is the client credentials flow, which is used only for server-to-server API requests. In order to use OAuth, a new OAuth client must be registered in your DingConnect account.",
+                "OAuth credentials are managed from within the DingConnect portal, by navigating to the Developer tab in Account Settings",
+                "Once new OAuth credentials are generated, a bearer token can be requested from https://idp.ding.com/connect/token with the client_id and client_secret. The returned token must be included in the Authorization header with the “Bearer” authentication scheme. A new token must be requested once the current token expires.",
+                "Supported identity provider configuration can be obtained from: https://idp.ding.com/.well-known/openid-configuration, and used programmatically with client libraries."
+            ],
+           
+            "pracontent3": [
+                "You require an API User and API Key in format APIUSER: APIKey e16510xx-7282-4a39-xx8b-da054889a33a:xx1894d23a8d4xxdadaf62f39dae99xx",
+                "Convert the concatenation of APIUser: APIKey into Base64 format"
+            ],
+            "chalidparacontent":[
+                "Use the Base64 format to generate the authorization token, the result will look similar to this string ZTE2NTEwY2xtNzI4Mi00YTx5LTg5OGItZGEwNTQ4ODlhMzNhOjg1MTg5NGQyM2E4ZDQxMWRhZGFmNxJmMzlkYWU5OcY4"
+            ],
+            "pracontent4": [
+                "Please review Sandbox provisioning process under API Sandbox",
+                "The API User and API Key are used to grant access to the wallet system applicable to a specific country",
+                "API user and Key are wholly managed by the merchant through Partner Portal in production",
+                "Developers can generate or revoke API Keys through the Partner Portal in production"
+            ],
+
+            "pracontent5": [
+                "This ID is used, for example, validating the status of the request. ‘Universal Unique ID’ for the transaction generated using UUID version 4",
+                "Example of Version 4 UUID: - ca58fd96-2478-4624-b663-bdacd5f914ca"
+            ],
+            "pracontentone": [
+                "The error codes are categorized as follows (Common Error Codes, Preapproval Error Codes, RequestToPay Error Codes, Transfer Error Codes and Validate Account Holder Error Codes)"
+            ],
+
+            "pracontent6": [
+                "The error codes are categorized as follows (Common Error Codes, Preapproval Error Codes, RequestToPay Error Codes, Transfer Error Codes and Validate Account Holder Error Codes)",
+                "The API User and API Key are used to grant access to the wallet system applicable to a specific country",
+                "More information on error codes can be found under the documentation section"
+            ]
+        }
+    ]
+}

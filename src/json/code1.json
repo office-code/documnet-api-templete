@@ -1,4 +1,20 @@
-{
+{ 
+    "data":{
+    "titlename": "BCT API",
+    "patacontent":"The agent should call ListTransferRecords with an appropriate query to get a list of TransferIds that are available to cancel.",
+    "titlename1":"Access Token",
+    "method": "POST",
+    "apiname":"Token Generation (Bearer)",
+    "apiurl":"https://developer.ecobank.com/corporateapi/user/token",
+    "shortpara":"Generates token for merchant authentication and authorization.",
+    "header":"HEADERS",
+    "contenttype":"Content-Type",
+    "origin":"Origin",
+    "accept":"Accept",
+    "applijson":"application/json",
+    "contenttypecontent":"In responses, a Content-Type header tells the client what the content type of the returned content actually is.",
+    "acceptcontent":"The Accept request HTTP header advertises which content types, expressed as MIME types, the client is able to understand.",
+    "origincontent":"The Origin request header indicates where a fetch originates from. It doesn't include any path information, but only the server name. It is sent with CORS requests, as well as with POST requests.",
     "response": [
         {
             "code200": {
@@ -85,7 +101,11 @@
                 }
             ]
         }
-    ],
+    ]
+},
+
+
+
     "oauth": [
         {
             "issuer": "https://idp.ding.com",

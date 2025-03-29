@@ -20,11 +20,11 @@ const Bodytext = ({ data }) => {
     return (
         <>
             {/* JSON Container with Overlay */}
-            <div style={{ 
-                position: "relative", 
-                padding: "10px", 
-                background: "#002b36", 
-                borderRadius: "8px", 
+            <div style={{
+                position: "relative",
+                padding: "10px",
+                background: "#002b36",
+                borderRadius: "8px",
                 maxHeight: isLargeJson ? "200px" : "auto",  // Restrict height if JSON is large
                 overflow: "hidden",
                 zIndex: "0",
@@ -47,15 +47,15 @@ const Bodytext = ({ data }) => {
                         left: "0",
                         width: "100%",
                         height: "50px",
-                        background: "linear-gradient(to top, rgba(0, 43, 54, 1), rgba(0, 43, 54, 0))", 
+                        background: "linear-gradient(to top, rgba(0, 43, 54, 1), rgba(0, 43, 54, 0))",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center"
                     }}>
-                        <button 
-                            onClick={handleShow} 
+                        <button
+                            onClick={handleShow}
                             style={{
-                                background: "#fff", 
+                                background: "#fff",
                                 border: "none",
                                 padding: "6px 12px",
                                 borderRadius: "5px",
@@ -74,7 +74,19 @@ const Bodytext = ({ data }) => {
             <Modal show={show} onHide={handleClose} className="search-mdl1" centered size="lg">
                 <Modal.Header closeButton className="search-mdl"></Modal.Header>
                 <Modal.Body>
-                    <div style={{ position: "relative", padding: "10px", background: "#002b36", borderRadius: "8px" }}>
+                    <div
+                        style={{
+                            position: "relative",
+                            padding: "10px",
+                            background: "#002b36",
+                            borderRadius: "8px",
+                            maxHeight: "500px",  // ✅ Scroll height reduced
+                            overflowY: "auto",  
+                            overflowX: "auto",
+                            scrollbarWidth: "thin", // ✅ Custom scrollbar
+                            scrollbarColor: "rgb(98 98 97 / 51%) rgb(0, 43, 54)" // ✅ Scrollbar color
+                        }}>
+
                         <button
                             onClick={handleCopy}
                             style={{

@@ -1,33 +1,83 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect } from "react";
+import { trackPromise, usePromiseTracker } from "react-promise-tracker";
+import { ThreeDots } from "react-loader-spinner";
 import image from "../assets/images/subscriptions-DocContnt.png"
+import content from "../json/content.json"
 export default function GettingStarted() {
+    const [contentdata, setcontentdata] = useState([])
+    const { promiseInProgress } = usePromiseTracker();
+
+
+    useEffect(() => {
+        trackPromise(
+            new Promise((resolve) => {
+                setTimeout(() => {
+                    setcontentdata(content.gettingstarted)
+                    resolve(); // ✅ Promise resolve karna zaroori hai
+                }, 1000); // Simulated delay (1 second)
+            })
+        );
+    }, [])
 
     return (
         <div className="box-dashboard-r">
             <div className="dashboard-wrapper">
                 <div className="container">
-                    <h4 className="h4-heading">Getting Started</h4>
-                    <p className="p-pera"><strong>y'ello,</strong>  in this section we'll walk you through getting up and running on our Mobile Money Open API. Here you will:</p>
-                    <ul>
-                        <li className="p-pera">Signup For An Account</li>
-                        <li className="p-pera">Manage Your Subscriptions</li>
-                        <li className="p-pera">Generate API User and API Key</li>
-                        <li className="p-pera">In order to receive the callback for your transactions, please consider the following:</li>
-                    </ul>
-                    <div>
-                        <h4 className="h4-heading">Signup For An Account</h4>
-                        <h4 className="h4-heading">Manage Your Subscriptions</h4>
-                        <p className="p-pera">Developers are issued a Primary Key and Secondary Key for every product.</p>
-                        <p className="p-pera">Both primary and secondary Subscription key provides access to the API. Without one of them a developer cannot access any of the APIs. Subscriptions are stored under the user profile and have no expiry.</p>
-                        <p className="p-pera">Here you can view the status of the package, date it started, conduct cancellation or activation actions, and also show or regenerate your Primary Key and Secondary Key</p>
-                        
-                         <div className="img-box">
-                            <img src={image} className="" />
-                         </div>
-                        
-                        <h4 className="h4-heading">Generate API User and API Key</h4>
-                        <p className="p-pera">You are now almost ready to start we building with our Mobile Money Open API. The next thing we need to do is to Provision the API User and API Key using the Sandbox Provisioning API. We do this in the next section.</p>
-                    </div>
+                    {promiseInProgress === true ? (
+                        <div
+                            className="spinner"
+                            style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignIitems: "center",
+                                height: "50px",
+                            }}
+                        >
+                            <ThreeDots
+                                height="80"
+                                width="80"
+                                color="#fc7a34"
+                                ariaLabel="circles-loading"
+                                wrapperStyle={{}}
+                                wrapperclassName=""
+                                visible={true}
+                            />
+                        </div>
+                    ) : (
+                        <>
+                            {contentdata.map((itemdata, index) => {
+                                return (
+                                    <div key={index}>
+                                        <h4 className="h4-heading">{itemdata.titlename}</h4>
+                                        {itemdata.pracontent.map((para, index) => (
+                                            <p key={index} className="p-pera">{para}</p>
+                                        ))}
+
+                                        <ul>
+                                            {itemdata.listpra.map((para, index) => (
+                                                <li className="p-pera" key={index}>{para}</li>
+                                            ))}
+                                        </ul>
+                                        <div>
+                                            <h4 className="h4-heading">{itemdata.titlename1}</h4>
+                                            <h4 className="h4-heading">{itemdata.titlename2}</h4>
+                                            {itemdata.pracontent2.map((para, index) => (
+                                                <p key={index} className="p-pera">{para}</p>
+                                            ))}
+
+                                            <div className="img-box">
+                                                <img src={image} className="" />
+                                            </div>
+
+                                            <h4 className="h4-heading">{itemdata.titlename3}</h4>
+                                            {itemdata.pracontent3.map((para, index) => (
+                                                <p key={index} className="p-pera">{para}</p>
+                                            ))}                                </div>
+                                    </div>
+                                )
+                            }, [])}
+                        </>
+                    )}
                 </div>
             </div>
         </div>
